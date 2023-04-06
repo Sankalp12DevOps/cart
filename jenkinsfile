@@ -7,17 +7,20 @@ environment{
 stages{
 
     stage('lint checks'){
+        steps{
         '''
-    sh "echo "Lint checking"
+    sh "echo Lint checking"
     sh "npm install jslint"
     sh "node_modules/jslint/bin/jslint.js server.js"
     '''
-
+        }
     }
 
     stage('install dependencies')
+    steps{
     
     sh "npm install"
+    }
 
 
 }
