@@ -9,11 +9,11 @@ url = "sdsdfs"
 
 stages{
 
-    stage('lint checks'){
+    stage('lint checks') {
     
         steps{
              script{
-node.groove('hello','this isnt right, pls correct')
+     sample.groove('hello','this isnt right, pls correct')
 
         }
 
