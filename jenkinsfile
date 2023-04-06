@@ -10,6 +10,7 @@ url = "sdsdfs"
 stages{
 
     stage('lint checks') {
+        when { branch pattern: "PR-*", comparator: "REGEXP"}
     
         steps{
              script{
