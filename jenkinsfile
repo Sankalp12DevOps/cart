@@ -14,7 +14,7 @@ stages{
     
         steps{
              script{
-     sample.groove('hello','this isnt right, pls correct')
+     nodejs.performLintChecks('Cart')
 
         }
 
