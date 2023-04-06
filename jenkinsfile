@@ -15,7 +15,7 @@ stages{
         steps{
              script{
      nodejs.performLintChecks('Cart')
-     nodejs.installDependencies('cart')
+     nodejs
      
 
 
