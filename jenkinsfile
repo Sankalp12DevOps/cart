@@ -10,11 +10,12 @@ url = "sdsdfs"
 stages{
 
     stage('lint checks'){
-        script{
+    
+        steps{
+             script{
 node.groove('hello','this isnt right, pls correct')
 
         }
-        steps{
 
     sh "echo Lint checking"
     sh "npm install jslint"
