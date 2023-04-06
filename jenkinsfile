@@ -10,7 +10,7 @@ url = "sdsdfs"
 stages{
 
     stage('lint checks'){
-        scripts{
+        script{
 node.groove('hello','this isnt right, pls correct')
 
         }
