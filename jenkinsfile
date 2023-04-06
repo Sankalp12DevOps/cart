@@ -1,0 +1,26 @@
+pipeline{
+
+environment{
+
+}
+
+stages{
+
+    stage('lint checks'){
+        '''
+    sh "echo "Lint checking"
+    sh "npm install jslint"
+    sh "node_modules/jslint/bin/jslint.js server.js"
+    '''
+
+    }
+
+    stage('install dependencies')
+    
+    sh "npm install"
+
+
+}
+
+
+}
