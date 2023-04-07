@@ -1,41 +1,4 @@
 @Library('jenkins-shared-library')_
-pipeline{
+ env.COMPONENT=car
 
- agent any
-
-environment{
-url = "sdsdfs"
-}
-
-stages{
-
-    stage('lint checks') {
-        when { branch pattern: "PR-.*", comparator: "REGEXP"}
-    
-        steps{
-             script{
-     nodejs.performLintChecks('Cart')
-     nodejs
-     
-
-
-        }
-
-
-    // sh "node_modules/jslint/bin/jslint.js server.js"
-    
-        }
-    }
-
-    stage('install dependencies'){
-    steps{
-    
-    sh "npm install"
-    }
-    }
-
-
-}
-
-
-}
+ node()
