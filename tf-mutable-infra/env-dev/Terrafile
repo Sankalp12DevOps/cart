@@ -1,0 +1,3 @@
+  mutable:
+    source:     "https://github.com/Sankalp12DevOps/tf-module-mutable.git"
+    version:    "main"
